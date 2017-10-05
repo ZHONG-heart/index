@@ -1,0 +1,23 @@
+<ion-view view-title="登录">
+	<ion-content>
+		<div class="list">
+  		<label class="item item-input">
+   		 <span class="input-label">Username</span>
+   		 <input type="text" ng-model="data.login1" id="login1">
+  		</label>
+  		<label class="item item-input">
+ 	 	  <span class="input-label">Password</span>
+ 	  	 <input type="password" ng-model="data.login2" id="login2">
+ 		 </label>
+		</div>
+		<button class="button button-full button-positive" on-tap="login()">
+			登录
+		</button>
+		
+ 			<a ng-href="#register" style="width: 100%;text-align: center;display: inline-block;line-height: 40px;background: lightgrey;text-decoration: none;color:#fff;">还没账号去注册</a>
+
+			<a ng-href="#tab/home" style="width: 100%;text-align: center;display: inline-block;line-height: 40px;text-decoration: none;">随便逛逛</a>
+		
+		
+	</ion-content>
+</ion-view>

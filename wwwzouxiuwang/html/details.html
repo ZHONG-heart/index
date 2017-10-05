@@ -1,0 +1,33 @@
+<ion-view>
+	<ion-content>
+		<div class="list card">
+
+  <div class="item item-avatar">
+    <img src="{{det[3]}}">
+    <h2>{{det.className}}</h2>
+    <!--<p>November 05, 1955</p>-->
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="{{det.goodsListImg}}">
+    <p>
+      {{det.detail}}
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+	</div>
+	
+	<button class="button button-block button-assertive" on-tap="detail()">
+ 		加入购物车
+	</button>
+	
+	
+	</ion-content>
+</ion-view>
+
+
+

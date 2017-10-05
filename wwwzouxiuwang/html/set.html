@@ -1,0 +1,30 @@
+<ion-view view-title="我的秀">
+	<ion-content>
+		<div class="list">
+
+     <a class="item item-thumbnail-left" href="#">
+      <img src="../img/ionic.png">
+      <h2>用户名：{{name?name:'还未登陆'}}</h2>
+      <p>Hello world</p>
+    </a>
+	</div>
+	<br /><br />
+	<ion-list>
+		<ion-item>
+			我的订单
+		</ion-item>
+		<ion-item>
+			我的优惠卷
+		</ion-item>
+		<ion-item>
+			浏览记录
+		</ion-item>
+		<ion-item>
+			我的收藏
+		</ion-item>
+		<ion-item on-tap="leave()">
+			{{name?'退出':'去登陆'}}
+		</ion-item>
+	</ion-list>
+	</ion-content>
+</ion-view>

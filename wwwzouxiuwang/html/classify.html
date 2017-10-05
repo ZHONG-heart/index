@@ -1,0 +1,15 @@
+<ion-view view-title="分类">
+	<ion-content>
+	<ion-refresher
+   		 pulling-text="下拉刷新..."
+  		  on-refresh="doRefresh()">
+  	</ion-refresher>
+		<div class="list" ng-repeat="i in classify">
+  			 <a class="item item-thumbnail-left" href="#tab/details/{{i.goodsID}}">
+     			<img src="{{i[3]}}">
+     			<h2>{{i.className}}</h2>
+    			<p>{{i.goodsName}}</p>
+   			</a>
+</div>
+	</ion-content>
+</ion-view>

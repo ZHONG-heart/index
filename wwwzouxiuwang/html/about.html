@@ -1,0 +1,24 @@
+<ion-view view-title="购物车">
+	<ion-content>
+		<ion-list>
+			<ion-item>商品数量：<span id="number" style="padding: 0 20px;">{{n?n:0}} </span> 应付总额：<span id="price" style="color: red;">{{p?p:0}}</span></ion-item>
+		</ion-list>
+		
+		<div style="padding: 10px;border-bottom: 1px dashed lightcoral;" ng-repeat="i in shop">
+			<img src="{{i[3]}}" style="padding: 10px;float: left;width: 130px;height: 130px;">
+			<p style="padding-top: 20px;">{{i.goodsName}}</p>
+			<p>单价:<span style="color: red;">{{i.price}}</span></p>
+			<p>
+				<span style="padding: 10px;font-size: 20px;" on-tap="min(i.goodsID)">-</span>
+				<span style="padding: 10px;" ng-model="data.shopNum" id="shopnum">{{i.number}}</span>
+				<span style="padding: 10px;font-size: 20px;" on-tap="add(i.goodsID)">+</span>
+			</p>
+		</div>
+		<ion-list>
+			<ion-item></ion-item>
+			<ion-item>数量点击可以无延迟更改，价格改变需要获取到数据</ion-item>
+			<ion-item>具体数据以刷新后为准，</ion-item>
+			<ion-item>随便逛逛不登录情况下无法看到购物车数据</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
