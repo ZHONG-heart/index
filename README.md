@@ -29,4 +29,8 @@ let file=document.getElementById('fileData')<br>
    let formData = new FormData();<br>
    formData.append('file',file.files[0]);<br>
    formdata.append('action','test');<br>
-   console.log(formData,formdata.getAll('file'))<br>
+   console.log(formData,formdata.getAll('file'))<br>
+## 刷新页面提示
+window.onbeforeunload=function(){
+            return "你确定要离开吗";
+        }
