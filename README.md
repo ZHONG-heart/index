@@ -23,3 +23,10 @@ module.exports = {<br>
     app: './src/main.js'<br>
     }<br>
 }
+
+## 文件上传
+let file=document.getElementById('fileData')<br>
+   let formData = new FormData();<br>
+   formData.append('file',file.files[0]);<br>
+   formdata.append('action','test');<br>
+   console.log(formData,formdata.getAll('file'))<br>
