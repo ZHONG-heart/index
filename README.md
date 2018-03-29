@@ -11,7 +11,7 @@ npm install --save-dev babel-polyfill
 
 import 'babel-polyfill'
 
-如果也是用了官方脚手架vue-cli，还需要在webpack.config.js配置文件中做各修改，用
+如果也是用了官方脚手架vue-cli，还需要在webpack.config.js配置文件中做各修改，用<br>
 module.exports = {  <br>
   entry: {    <br>
     app: ["babel-polyfill", "./src/main.js"]<br>
@@ -21,5 +21,5 @@ module.exports = {  <br>
 module.exports = {<br>
     entry: {<br>
     app: './src/main.js'<br>
-}<br>
+    }<br>
 }
