@@ -33,4 +33,10 @@ let file=document.getElementById('fileData')<br>
 ## 刷新页面提示
 window.onbeforeunload=function(){
             return "你确定要离开吗";
-        }
+        }
+## 顶部进度条插件
+查看详细使用方法以及获取插件
+NProgress.js：http://ricostacruz.com/nprogress/
+nanobar.js：http://nanobar.micronube.com/
+
+
