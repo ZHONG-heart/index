@@ -39,6 +39,15 @@ window.onbeforeunload=function(){
 NProgress.js：http://ricostacruz.com/nprogress/
 nanobar.js：http://nanobar.micronube.com/
 
-### .div{
+### css样式可以加减.div{
     width: calc(100% - 500px);
+}
+### 实时编辑<style style="display:block" contentEditable>
+            body { color: blue }
+</style>
+### 多重边框.div {
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 0 12px rgba(0, 0, 0, 0.2), 0 0 0 18px rgba(0, 0, 0, 0.2), 0 0 0 24px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    margin: 50px auto;
+    width: 400px
 }
