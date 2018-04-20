@@ -39,4 +39,6 @@ window.onbeforeunload=function(){
 NProgress.js：http://ricostacruz.com/nprogress/
 nanobar.js：http://nanobar.micronube.com/
 
-
+### .div{
+    width: calc(100% - 500px);
+}
