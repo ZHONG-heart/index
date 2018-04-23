@@ -63,3 +63,4 @@ nanobar.js：http://nanobar.micronube.com/
 3.return false  ；
 
 这个方法比较暴力，他会同事阻止事件冒泡也会阻止默认事件；写上此代码，连接不会被打开，事件也不会传递到上一层的父元素；可以理解为return false就等于同时调用了event.stopPropagation()和event.preventDefault()
+### formatNumber字符串添加千分号
