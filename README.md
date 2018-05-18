@@ -67,3 +67,10 @@ nanobar.js：http://nanobar.micronube.com/
 VMware 2017 v14.x 永久许可证激活密钥
 FF31K-AHZD1-H8ETZ-8WWEZ-WUUVA
 CV7T2-6WY5Q-48EWP-ZXY7X-QGUWD
+
+
+图标不正常展示，用的iView中出现的方法
+rules: utils.styleLoaders({
+      sourceMap: config.build.productionSourceMap,
+      extract: false
+    })
