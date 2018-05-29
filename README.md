@@ -74,3 +74,13 @@ rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,
       extract: false
     })
+    
+    # #手机端调试
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+
+eruda.init();
+
+console.log('控制台打印信息');
+
+</script>
