@@ -84,7 +84,8 @@ eruda.init();
 console.log('控制台打印信息');
 
 </script>
-　　　　函数的apply方法有一个特性，那就是func.apply(obj,argv)，argv是一个数组。所以我们可以利用这点，直接上代码：
+#数组合并
+　函数的apply方法有一个特性，那就是func.apply(obj,argv)，argv是一个数组。所以我们可以利用这点，直接上代码：
 
 a.push.apply(a,b);
 　　　　调用a.push这个函数实例的apply方法，同时把，b当作参数传入，这样a.push这个方法就会遍历b数组的所有元素，达到合并的效果。
