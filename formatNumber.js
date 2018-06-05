@@ -13,3 +13,6 @@ function formatNumber(num) {
             }  
             return array.join('') + decimalPart;  
         }; 
+function format(num){
+      return           num.toString().replace(/(\d{1,3})(?=(\d{3})+$)/g,'$1,');
+}
