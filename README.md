@@ -96,3 +96,17 @@ a.push.apply(a,[4,5,6]);
 　　　　然后上面的操作就等同于：
 
 a.push(4,5,6);
+
+#window下安装redis报错：
+creating server tcp listening socket 127.0.0.1:6379: bind No error
+
+的解决方案如下按顺序输入如下命令就可以连接成功
+
+1. redis-cli.exe
+2. shutdown
+3. exit
+4. redis-server.exe redis.windows.conf
+
+
+
+参考连接:http://blog.csdn.net/fengzhihen2007/article/details/52211048
