@@ -110,3 +110,23 @@ creating server tcp listening socket 127.0.0.1:6379: bind No error
 
 
 参考连接:http://blog.csdn.net/fengzhihen2007/article/details/52211048
+
+## 多选框
+checkAll: {
+      get() {
+        return this.checkedCount === this.list.length;
+      },
+      set(value) {
+        this.lists = this.list.map(item => {
+          console.log(value)
+          item.manage_checked = value;
+          console.log(item,'这是item的值')
+          return item;
+        });
+      }
+    },
+     checkedCount: {
+      get() {
+        return this.list.filter(item => item.manage_checked).length;
+      }
+    }
