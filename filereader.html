@@ -4,24 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>biubibubiu</title>
 </head>
-<script src="jquery-3.2.1.min.js"></script>
 <input type="file" onchange="abc(this)">
 <body>
     <script>
-        // $.ajax({
-        //     url:'https://api.weibo.com/2/comments/create.json',
-        //     get:'post',
-        //     data:{
-        //         access_token:'00OIgSLE034XBMa8e4512d37LcDqXE',
-        //         comment:`哎呦${new Date()}`,
-        //         id:'4288797178843458'
-        //     },
-        //     success:data=>{
-        //         console.log(data)
-        //     }
-        // })
+     
         function abc(a){
             console.log(window.event)
             console.log(a.files)
@@ -39,6 +27,8 @@
                     anchor.href = downloadUrl;  
                     anchor.download = "文件名.gif";  
                     anchor.click();  
+                    window.URL.revokeObjectURL(data);
+                    document.body.removeChild(anchor);
                 }
             }
         }
