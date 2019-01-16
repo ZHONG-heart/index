@@ -130,3 +130,5 @@ checkAll: {
         return this.list.filter(item => item.manage_checked).length;
       }
     }
+    
+ # record H5录音上传
