@@ -132,3 +132,10 @@ checkAll: {
     }
     
  # record H5录音上传
+
+实现：
+merge([3,2,2,4,5,5,6,2,1]); // 输出[3,2,4,5,6,2,1]
+merge([3,2,3]); // 输出[3,2,3]
+merge([2,2,3]); // 输出[2,3]
+
+arr.filter((item, index) => arr[index + 1] !== arr[index])
