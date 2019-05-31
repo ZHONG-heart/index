@@ -1,0 +1,28 @@
+var data=[
+{"id":"aaa","parentId":"account","spType":0,"layerId":0,"seqId":1,"name":"阿萨德发多少","deleted":"0"},
+{"id":"account","parentId":"","spType":0,"layerId":0,"seqId":50,"name":"账户","deleted":"0"},
+{"id":"bbb","parentId":"account","spType":0,"layerId":0,"seqId":2,"name":"阿萨德发多少","deleted":"0"},
+{"id":"ccc","parentId":"account","spType":0,"layerId":0,"seqId":3,"name":"a啊都是发","deleted":"0"},
+{"id":"ddd","parentId":"dispatch","spType":0,"layerId":0,"seqId":1,"name":"大夫","deleted":"0"},
+{"id":"dispatch","parentId":"","spType":0,"layerId":0,"seqId":2,"name":"通知公告","deleted":"0"},
+{"id":"eee","parentId":"dispatch","spType":0,"layerId":0,"seqId":2,"name":"；卡萨丁","deleted":"0"},
+{"id":"fff","parentId":"gridding","spType":0,"layerId":0,"seqId":1,"name":"拉收到了","deleted":"0"},
+{"id":"gridding","parentId":"","spType":0,"layerId":0,"seqId":1,"name":"网格化管理","deleted":"0"},
+{"id":"portals","parentId":"","spType":0,"layerId":0,"seqId":3,"name":"综合信息门户管理","deleted":"0"}
+];
+
+   var getJsonTree=function(data,parentId){
+    	var itemArr=[];
+		for(var i=0;i<data.length;i++){	
+			var node=data[i];
+			//data.splice(i, 1)
+			 if(node.parentId==parentId ){	
+				var newNode={id:node.id,title:node.name,nodes:getJsonTree(data,node.id)};
+				itemArr.push(newNode);				 
+			 }
+		}
+		return itemArr;
+    }
+	
+	console.log(getJsonTree(data,''));
+	
